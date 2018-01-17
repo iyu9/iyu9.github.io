@@ -1,0 +1,9 @@
+p {  
+  color: blue;
+}
+
+h1 {
+  padding: .5em .75em;
+  background-color: #f6f6f6;
+  border: 3px double #ccc;
+}
