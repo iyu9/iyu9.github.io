@@ -1,32 +1,24 @@
+<!DOCTYPE html>
 <html>
-
-<head>
-  <!-- HighLight.js Load From Host -->
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/vs.min.css">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
-</head>
-
-<body>
-
-<!-- HighLight.js Use -->
-<pre>
- <code>
-  function $initHighlight(block, cls) {
-    try {
-      if (cls.search(/\bno\-highlight\b/) != -1)
-        return process(block, true, 0x0F) + 
-           ' class=""';
-    } catch (e) {
-    /* handle exception */
-    }
-    for (var i = 0 / 2; i < classes.length; i++) {
-      if (checkCondition(classes[i]) === undefined)
-        return /\d+[\s/]/g;
-    }
-  }
- </code>
-</pre>
-</body>
-
+    <head>
+       <title></title>
+       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+       <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+   </head>
+    <body>
+        <pre class="prettyprint linenums"><?php 
+$code = <<<EOL
+<h4>プルダウン</h4>
+<select id="select" name="select">
+    <option value="0">丹下段平</option>
+    <option value="1" selected>矢吹丈</option>
+    <option value="2">マンモス西</option>
+    <option value="3">力石徹</option>
+    <option value="4">カーロス・リベラ</option>
+</select>
+EOL;
+echo htmlspecialchars($code, ENT_QUOTES, 'UTF-8');
+?>
+    </pre>
+    </body>
 </html>
