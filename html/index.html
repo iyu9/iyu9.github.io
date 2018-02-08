@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
   <head>
 	<meta charset="UTF-8">
 	<title>index.html</title>
@@ -11,23 +12,31 @@
   </head>
 
   <body>
-	<h1>%Title%</h1>
-	<p>%info%</p>
-	<hr>
-	<a href="#">%about%</a>   </br>
-	<a href="#">%bbs%</a>     </br>
-	<a href="#">%chat%</a>    </br>
-	<a href="#">%works%</a>   </br>
-	<a href="#">%mail%</a>    </br>
-	<hr>
-	<p>%copyright%</p>
+	<div id="header">
+	  <h1>Title</h1>
+	  <p>info</p>
+	</div>
 
-  <script>
-	var paragraphs = document.getElementsByTagName("p");
-	for (var i = 0; i < paragraphs.length; i++) {
-  		var paragraph = paragraphs.item(i);
-  		paragraph.style.setProperty("color", "white", null);
-	}
-  </script>
+	<div id="nav">
+	  <hr>
+	  <a href="#">%about%</a>   </br>
+	  <a href="#">%bbs%</a>     </br>
+	  <a href="#">%chat%</a>    </br>
+	  <a href="#">%works%</a>   </br>
+	  <a href="#">%mail%</a>    </br>
+	<hr>
+
+	<div id="footer">
+	  <p>copyright%</p>
+
+	  <script>
+		var paragraphs = document.getElementsByTagName("p");
+		for (var i = 0; i < paragraphs.length; i++) {
+		  var paragraph = paragraphs.item(i);
+		  paragraph.style.setProperty("color", "white", null);
+		}
+	  </script>
+	</div>
   </body>
+
 </html>
