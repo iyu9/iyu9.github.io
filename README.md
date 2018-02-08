@@ -2,8 +2,8 @@
 
 ---
 
-[check Web](https://iyu9.github.io/html "check Web")
+[see Web](https://iyu9.github.io/html)
 
-[github](https://github.com/iyu9/iyu9.github.io.git)
+[see github](https://github.com/iyu9/iyu9.github.io.git)
 
 ---
