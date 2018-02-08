@@ -1,1 +1,1 @@
-RedirectMatch permanent (.*)\.html https://iyu9.github.io/
+RedirectMatch permanent (.*)\.html https://iyu9.github.io/html/login.html
