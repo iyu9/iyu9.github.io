@@ -32,8 +32,20 @@
 	  {
 		ctx.clearRect(x, y, w, h);
 
+		ctx.fillRect(x, y, w, h);
+		console.log(e);
+	  }
+
+	  function EvalKeys()
+	  {
 		switch(e.key)
 		{
+		  case "ArrowUp":
+			y += 10;
+			break;
+		  case "ArrowDown":
+			y -= 10;
+			break;
 		  case "ArrowLeft":
 			x -= 10;
 			break;
@@ -41,9 +53,6 @@
 			x += 10;
 			break;
 		}
-		
-		ctx.fillRect(x, y, w, h);
-		console.log(e);
 	  }
 	</script>
   </body>
