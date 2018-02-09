@@ -31,12 +31,12 @@
 	  document.onkeydown = function(e)
 	  {
 		ctx.clearRect(x, y, w, h);
-
+		EvalKeys(e);
 		ctx.fillRect(x, y, w, h);
 		console.log(e);
 	  }
 
-	  function EvalKeys()
+	  function EvalKeys(e)
 	  {
 		switch(e.key)
 		{
