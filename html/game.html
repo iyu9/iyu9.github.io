@@ -13,8 +13,7 @@
 
   <body>
 
-	<canvas id="canvas">
-	</canvas>
+	<canvas id="canvas" width="1000" height="1000"></canvas>
 
 	<script>
 	  var canvas = document.getElementById("canvas");
@@ -28,17 +27,17 @@
 	  var img = new Image();
 	  img.src = "../img/bg.gif";
 	  img.onload = function() {
-		ctx.drawImage(img, 0, 0);
+		ctx.drawImage(img, x, y, w, h);
 	  }
 
 	  ctx.fillStyle = "green";
-	  ctx.fillRect(x, y, 100, 100);
+	  ctx.fillRect(x, y, w, h);
 
 	  document.onkeydown = function(e)
 	  {
 		ctx.clearRect(x, y, w, h);
 		EvalKeys(e);
-		ctx.fillRect(x, y, w, h);
+		ctx.drawImage(img, x, y, w, h);
 	  }
 
 	  function EvalKeys(e)
