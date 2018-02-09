@@ -13,7 +13,7 @@
 
   <body>
 
-	<canvas id="canvas" width="1000" height="1000"></canvas>
+	<canvas id="canvas" width="680" height="480"></canvas>
 
 	<script>
 	  var canvas = document.getElementById("canvas");
@@ -44,14 +44,10 @@
 	  {
 		switch(e.key)
 		{
-		  case "ArrowUp":
-			y -= 10; break;
-		  case "ArrowDown":
-			y += 10; break;
-		  case "ArrowLeft":
-			x -= 10; break;
-		  case "ArrowRight":
-			x += 10; break;
+		  case "ArrowUp"   : y -= 10; break;
+		  case "ArrowDown" : y += 10; break;
+		  case "ArrowLeft" : x -= 10; break;
+		  case "ArrowRight": x += 10; break;
 		}
 	  }
 	</script>
