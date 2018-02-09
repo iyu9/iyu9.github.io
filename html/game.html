@@ -25,6 +25,12 @@
 	  var w = 100;
 	  var h = 100;
 
+	  var img = new Image();
+	  img.src = "../img/bg.gif";
+	  img.onload = function() {
+		ctx.drawImage(img, 0, 0);
+	  }
+
 	  ctx.fillStyle = "green";
 	  ctx.fillRect(x, y, 100, 100);
 
