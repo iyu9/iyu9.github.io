@@ -31,7 +31,17 @@
 	  document.onkeydown = function(e)
 	  {
 		ctx.clearRect(x, y, w, h);
-		x += 10;
+
+		switch(e.key)
+		{
+		  case "ArrowLeft":
+			x -= 10;
+			break;
+		  case "ArrowRight":
+			x += 10;
+			break;
+		}
+		
 		ctx.fillRect(x, y, w, h);
 		console.log(e);
 	  }
