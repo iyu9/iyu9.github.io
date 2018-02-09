@@ -22,15 +22,18 @@
 
 	  var x = 10;
 	  var y = 10;
+	  var w = 100;
+	  var h = 100;
 
 	  ctx.fillStyle = "green";
 	  ctx.fillRect(x, y, 100, 100);
 
 	  document.onkeydown = function(e)
 	  {
-		console.log(e);
+		ctx.clearRect(x, y, w, h);
 		x += 10;
-		ctx.fillRect(x, y, 100, 100);
+		ctx.fillRect(x, y, w, h);
+		console.log(e);
 	  }
 	</script>
   </body>
