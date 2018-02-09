@@ -20,12 +20,16 @@
 	  var canvas = document.getElementById("canvas");
 	  var ctx = canvas.getContext("2d");
 
+	  var x = 10;
+	  var y = 10;
+
 	  ctx.fillStyle = "green";
-	  ctx.fillRect(10, 10, 100, 100);
+	  ctx.fillRect(x, y, 100, 100);
 
 	  document.onkeydown = function(e)
 	  {
-		console.log(e);	
+		console.log(e);
+		x += 1;
 	  }
 	</script>
   </body>
